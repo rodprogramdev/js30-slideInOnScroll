@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" author="Rodrigo Bonzerr S. Lopez">
+    
+    <title>Slide In On Scroll</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: yellow;
+        }
+
+
+        main {
+            background-color: antiquewhite;
+            margin: 10%;
+            padding: 5%;
+            border: 1px solid green;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        section {
+            margin: 15%;
+        }
+
+        .img-teddy {
+            height: 50%;
+            width: 50%;
+            float: left;
+            padding: 2%;
+        }
+
+        .img-mihawk {
+            height: 50%;
+            width: 50%;
+            float: right;
+            padding: 2%;
+        }
+
+
+
+        .img-nami {
+            height: 50%;
+            width: 50%;
+            float: left;
+            padding: 2%;
+        }
+
+        .slide-in {
+            opacity: 0;
+            transition: all .5s;
+        }
+
+        .aligned-left.slide-in {
+            transform: translateX(-30%) scale(0.95);
+        }
+
+        .aligned-right.slide-in {
+            transform: translateX(30%) scale(0.95);
+        }
+
+
+
+        .slide-in.active {
+            opacity: 1;
+            transform: translateX(0%) scale(1);
+        }
+
+        footer{
+            padding: 5%;
+            text-align:center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <h1>SLIDE IN ON SCROLL JAVASCRIPT 30 EXERCISE</h1>
+        <section>
+            <h2>TEDDY ON A MIRROR</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium nam placeat tempora totam
+                dolore
+                ipsam,
+                non commodi.
+                Porro obcaecati velit doloremque praesentium ab fuga laboriosam fugit vero accusantium hic!</p>
+
+            <br />
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium nam placeat tempora totam
+                dolore
+                ipsam,
+                non commodi.
+                Porro obcaecati velit doloremque praesentium ab fuga laboriosam fugit vero accusantium hic!</p>
+
+            <br />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium nam placeat tempora totam
+                dolore
+                ipsam,
+                non commodi.
+                Porro obcaecati velit doloremque praesentium ab fuga laboriosam fugit vero accusantium hic!</p>
+            <br />
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi obcaecati doloremque modi natus adipisci
+                eos, asperiores,
+                a omnis veniam, repellendus praesentium quam soluta aliquid! Quasi rerum illum laborum dolorem! Numquam?
+            </p>
+            <br />
+            <img class="img-teddy slide-in aligned-left" src="images/rbslopez-photography-teddy.jpg"
+                alt="Teddy shot 1 - rbslopez-photography-teddy" loading="lazy">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi obcaecati doloremque modi natus adipisci
+                eos, asperiores,
+                a omnis veniam, repellendus praesentium quam soluta aliquid! Quasi rerum illum laborum dolorem! Numquam?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi obcaecati doloremque modi natus adipisci
+                eos, asperiores,
+                a omnis veniam, repellendus praesentium quam soluta aliquid! Quasi rerum illum laborum dolorem! Numquam?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi obcaecati doloremque modi natus adipisci
+                eos, asperiores,
+                a omnis veniam, repellendus praesentium quam soluta aliquid! Quasi rerum illum laborum dolorem! Numquam?
+            </p>
+        </section>
+        <hr />
+        <section>
+            <h2>MY DOG MIHAWK</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium nam placeat tempora totam
+                dolore
+                ipsam,
+                non commodi.
+                Porro obcaecati velit doloremque praesentium ab fuga laboriosam fugit vero accusantium hic!</p>
+
+            <br />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium nam placeat tempora totam
+                dolore
+                ipsam,
+                non commodi.
+                Porro obcaecati velit doloremque praesentium ab fuga laboriosam fugit vero accusantium hic!</p>
+
+            <br />
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi obcaecati doloremque modi natus adipisci
+                eos, asperiores,
+                a omnis veniam, repellendus praesentium quam soluta aliquid! Quasi rerum illum laborum dolorem! Numquam?
+            </p>
+            <br />
+            <img class="img-mihawk slide-in aligned-right" src="images/rbslopez-photography-mihak.jpg"
+                alt="Mihawk rbslopez-photography-mihawk" loading="lazy">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi obcaecati doloremque modi natus adipisci
+                eos, asperiores,
+                a omnis veniam, repellendus praesentium quam soluta aliquid! Quasi rerum illum laborum dolorem! Numquam?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi obcaecati doloremque modi natus adipisci
+                eos, asperiores,
+                a omnis veniam, repellendus praesentium quam soluta aliquid! Quasi rerum illum laborum dolorem! Numquam?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi obcaecati doloremque modi natus adipisci
+                eos, asperiores,
+                a omnis veniam, repellendus praesentium quam soluta aliquid! Quasi rerum illum laborum dolorem! Numquam?
+            </p>
+        </section>
+        <hr />
+        <section>
+            <h2>MY DOG NAMI</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium nam placeat tempora totam
+                dolore
+                ipsam,
+                non commodi.
+                Porro obcaecati velit doloremque praesentium ab fuga laboriosam fugit vero accusantium hic!</p>
+
+            <br />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium nam placeat tempora totam
+                dolore
+                ipsam,
+                non commodi.
+                Porro obcaecati velit doloremque praesentium ab fuga laboriosam fugit vero accusantium hic!</p>
+                <br />
+                <img class="img-nami slide-in aligned-right" src="images/rbslopez-photography-nami.jpg"
+                    alt="Nami rbslopez-photography-mihawk" loading="lazy">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi obcaecati doloremque modi natus adipisci
+                    eos, asperiores,
+                    a omnis veniam, repellendus praesentium quam soluta aliquid! Quasi rerum illum laborum dolorem! Numquam?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi obcaecati doloremque modi natus adipisci
+                    eos, asperiores,
+                    a omnis veniam, repellendus praesentium quam soluta aliquid! Quasi rerum illum laborum dolorem! Numquam?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi obcaecati doloremque modi natus adipisci
+                    eos, asperiores,
+                    a omnis veniam, repellendus praesentium quam soluta aliquid! Quasi rerum illum laborum dolorem! Numquam?
+                </p>
+        </section>
+    </main>
+<footer><p>Hello guys!! I'm RODRIGO BONZERR S. LOPEZ this is my output for the #javascript30 exercise SLIDE IN SCROLL</p></footer>
+    <script>
+
+        /*Debounce will only run this funciton at most howver many seconds debouncs in lodash, functions
+        
+        */
+        function debounce(func, wait = 20, immediate = true) {
+            var timeout;
+            return function () {
+                var context = this, args = arguments;
+                var later = function () {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
+        };
+
+        const sliderImages = document.querySelectorAll('.slide-in');
+
+        function checkSlide(e) {
+            // console.count(e);
+            // console.log(window.scrollY);
+            sliderImages.forEach(sliderImage => {
+                //half way of the image
+                const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+                // console.log(slideInAt);
+
+                //bottom of the image
+                const imageBottom = sliderImage.offsetTop + sliderImage.height;
+                const isHalfShown = slideInAt > sliderImage.offsetTop;
+                const isNotScrolledPast = window.scrollY < imageBottom;
+
+                if (isHalfShown && isNotScrolledPast) {
+                    sliderImage.classList.add('active');
+                } else {
+                    sliderImage.classList.remove('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', debounce(checkSlide));
+    </script>
+   
+</body>
+
+</html>
